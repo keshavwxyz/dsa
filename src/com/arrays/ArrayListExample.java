@@ -14,7 +14,7 @@ public class ArrayListExample {
         list.add(345);
 
         System.out.println(list);
-        
+        /*
         //input
         for (int i = 0; i < 5; i++) {
             list.add(in.nextInt());
@@ -22,5 +22,18 @@ public class ArrayListExample {
         for (int i = 0; i <5; i++) {
             System.out.println(list.get(i));
         }
+        */
+
+        //multi array list
+        ArrayList<ArrayList<Integer>> ml = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+             ml.add(new ArrayList<>());
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                ml.get(i).add(in.nextInt());
+            }
+        }
+        System.out.println(ml);
     }
 }

@@ -10,12 +10,12 @@ public class FibonacciSeries {
         System.out.println(arr);
     }
 
-    public static void fab(List<Integer> arr,int i) {
+    public static void fab(List<Integer> arr, int i) {
         arr.add(0);
         arr.add(1);
-        int n1 = 0, n2 = 1, temp;
+        int n1 = 0, n2 = 1;
         while(i>0) {
-            temp = n2;
+            int temp = n2;
             n2 = n2 + n1;
             n1 = temp;
             arr.add(n2);

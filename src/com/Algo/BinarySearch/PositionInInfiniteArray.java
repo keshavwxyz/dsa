@@ -3,7 +3,7 @@ package com.Algo.BinarySearch;
 public class PositionInInfiniteArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 19, 22, 25, 27, 29, 34, 37, 45, 49, 56, 57, 63, 69, 70, 71, 72, 73, 74, 75, 76, 77, 79, 81, 82, 83, 84};
-        System.out.println(piia(arr,15));
+        System.out.println(piia(arr,69));
     }
     static int piia(int[] arr, int target){
         int start = 0;
